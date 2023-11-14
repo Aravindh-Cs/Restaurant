@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.cssj b">
+   <title>AV</title>
+</head>
+<body>
+       <header>
+              <div class="menu">
+                   <div class="logo">
+                        <img  src="images/logo.png" alt="">
+                   </div>
+           <div class="navbar">
+                     <a href="#home" class="hom">HOME</a>
+                     <a href="#about" class="abts">ABOUT US</a>
+             <div class="drop">
+                  <a>FOOD</a>
+               <div class="dropcontent">
+                     <a  class="btns" data-filter=""></a>
+                     <a target="_parent" class="btns" data-filter="veg">VEG</a>
+                     <a target="_blank" class="btns" data-filter="nonveg">NON-VEG</a>
+                     <a target="_blank" class="btns" data-filter="ice">ICE CREAM<a>
+                     <a target="_blank" class="btns" data-filter="cake">CAKE</a>
+               </div>
+             </div>
+              <div class="count">
+                  <div class="no">0</div>
+                  <div class="ord">ORDER</div>
+              </div>
+                     <a href="#reservation" class="reserv">RESERVATION</a>
+                     <a href="#conatct" class="cont">CONTACT</a>
+           </div>
+               <div class="bar"onclick="myFunction(this)" >
+                   <div class="line" id="line1"></div>
+                   <div class="line" id="line2"></div>
+                   <div class="line" id="line3"></div>
+               </div>
+           </header> 
+<div class="bg" id="home"> 
+       <div class="pic">
+              <img src="images/1.jpg" alt="">
+              <img src="images/2.jpg" alt="">
+       </div>
+              <div class="info">
+                     <h1>AV</h1>
+                     <h2>Restaurant</h2>
+              </div>
+         <div class="images">
+              <div class="icon">
+         <div class="circle" style="--i:1">
+              <img src="images/0.5.jpg" alt="">
+         </div>
+         <div class="circle" style="--i:3">
+              <img src="images/bg-nonveg1.jpg" alt="">
+         </div>
+         <div class="circle" style="--i:2">
+              <img src="images/bg-veg1.jpeg" alt="">
+         </div>
+         <div class="circle" style="--i:4">
+              <img src="images/bg-cake5.jpeg" alt="">
+         </div>
+         <div class="circle" style="--i:5">
+              <img src="images/bg-ice1.jpeg" alt="">
+         </div>
+       </div>
+         </div>
+         <div class="pics">
+              <img src="images/3.jpg" alt="">
+              <img src="images/4.jpg" alt="">
+       </div>
+</div>
+<div id="about" class="about">
+       <h1>About [AV Restaurant]</h1>
+       <p class="p1">
+              Welcome to AV restaurant  a culinary journey that brings together 
+              the finest ingredients, masterful chefs, and a passion for extraordinary 
+              dining. We take pride in crafting memorable experiences for our guests, one plate at a time.
+              AV was born from a dream and a love for food. Founded by Aravind, our 
+              restaurant has been a cornerstone of the community, offering a place where people can gather, 
+              celebrate, and savor the flavors of our expertly prepared dishes.
+       </p>
+       <p class="p1">
+              Quality is our utmost priority. We meticulously source the finest ingredients and handpick
+              each element that goes into your dish. From farm-fresh produce to premium cuts of meat and 
+              seafood, every ingredient is chosen with care to ensure your dining experience is nothing short of exceptional.
+              We invite you to join us on this gastronomic journey. Whether it's a special occasion or a 
+              spontaneous night out, AV Restaurant is the perfect setting for creating cherished memories over a delicious meal.
+              </p>
+              <h2>Thank you for choosing AV Restaurant.</h2>
+              <div class="abtclose">&times;</div>
+</div>
+    <!-- code for cart section -->
+    <div class="cart">
+       <div class="title">items</div>
+       <div class="cart-content">
+              <h2 class="id">
+                     <i class="fa-solid fa-cart-plus" style="color: #090a0c;"></i>
+                     <br>
+                     your cart is empty pleace select items from menu</h2>
+              <!--
+            <div class="cart-box">
+              <img src="images/ice1.png" class="image" alt="">
+            <div class="detail-box">
+              <div class="food-name">ice</div>
+              <div class="cart-price">
+              <div class="food-price">Rs.50</div>
+              <div class="food-amt">Rs.200</div>
+            </div>
+            <input type="number" value="1" class="qty">
+       </div>
+       <div class="remove"><i class="fa-regular fa-trash-can fa-xs" style="color: #dd1313;"></i></div>
+       </div>
+       <div class="cart-box">
+              <img src="images/ice2.png" class="image" alt="">
+            <div class="detail-box">
+              <div class="food-name">ice</div>
+              <div class="cart-price">
+              <div class="food-price">Rs.50</div>
+              <div class="food-amt">Rs.200</div>
+            </div>
+            <input type="number" value="1" class="qty">
+       </div>
+       <div class="remove"><i class="fa-regular fa-trash-can fa-xs" style="color: #dd1313;"></i></div>
+       </div>-->
+       </div>
+       <div class="display">
+       <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">Rs.0</div>
+       </div>
+       <button class="place-order">Place Order</button>
+</div>
+       <div class="close">&times;</div>
+</div>
+    <div class="place">
+     <p>🙏
+       thank you for odering food in our restaurant the 
+       food will be delivered after opening the restaurant.
+       this is my imaginery restaurant.you will get your 
+       food very soon😂😂😂.
+
+     </p>
+    <div class="placlose">&times;</div>    
+</div>
+<!-- code for items list -->
+<div class="items" id="items">
+  <div class="food" data-product="ice">
+       <img src="images/ice1.png" class="img" alt="">
+       <div class="name">Chocolate</div>
+       <div class="price">Rs.80</div>
+       <div class="order">order</div>
+ </div>
+ <div class="food" data-product="ice">
+       <img src="images/ice2.png" class="img" alt="">
+       <div class="name">Raspberry</div>
+       <div class="price">Rs.95</div>
+       <div class="order">order</div>
+ </div>
+ <div class="food" data-product="ice">
+       <img src="images/ice3.png" class="img" alt="">
+       <div class="name">Butter Pecan</div>
+       <div class="price">Rs.75</div>
+       <div class="order">order</div>
+ </div>
+ <div class="food" data-product="ice">
+       <img src="images/ice4.png" class="img" alt="">
+       <div class="name">Lime Sorbet</div>
+       <div class="price">Rs.90</div>
+       <div class="order">order</div>
+ </div>
+ <div class="food" data-product="ice">
+       <img src="images/ice5.png"class="img" alt="">
+       <div class="name">Vanilla</div>
+       <div class="price">Rs.65</div>
+       <div class="order">order</div>
+ </div>
+ <div class="food" data-product="ice">
+       <img src="images/ice6.png" class="img" alt="">
+       <div class="name">Cherry</div>
+       <div class="price">Rs.90</div>
+       <div class="order">order</div>
+ </div>
+ <div class="food" data-product="ice">
+       <img src="images/ice7.png" class="img" alt="">
+       <div class="name">Classic Hot Sundae</div>
+       <div class="price">Rs.100</div>
+       <div class="order">order</div>
+ </div>
+ <div class="food" data-product="ice">
+       <img src="images/ice10.png" class="img" alt="">
+       <div class="name">Butterscotch</div>
+       <div class="price">Rs.100</div>
+       <div class="order">order</div>
+ </div>
+ <div class="food" data-product="ice">
+       <img src="images/ice9.png" class="img" alt="">
+       <div class="name">Magnum</div>
+       <div class="price">Rs.120</div>
+       <div class="order">order</div>
+ </div>
+ <div class="food" data-product="ice">
+       <img src="images/ice11.png" class="img" alt="">
+       <div class="name">Strawberry</div>
+       <div class="price">Rs.200</div>
+       <div class="order">order</div>
+ </div>
+<!-- Cake -->       
+ <div class="food" data-product="cake">
+        <img src="images/cake1.png" class="img" alt="">
+        <div class="name">Strawberry</div>
+        <div class="price">Rs.200</div>
+        <div class="order">order</div>
+ </div>
+ <div class="food" data-product="cake">
+        <img src="images/cake12.png" class="img" alt="">
+        <div class="name">Ice Cake</div>
+        <div class="price">Rs.250</div>
+        <div class="order">order</div>
+ </div>
+ <div class="food" data-product="cake">
+        <img src="images/cake3.png" class="img" alt="">
+        <div class="name">Vanilla</div>
+        <div class="price" cost="150">Rs.180</div>
+        <div class="order">order</div>
+ </div>
+ <div class="food" data-product="cake">
+        <img src="images/cake4.png" class="img" alt="">
+        <div class="name">Black Forest</div>
+        <div class="price" cost="180">Rs.230</div>
+        <div class="order">order</div>
+ </div>
+ <div class="food" data-product="cake">
+        <img src="images/cake5.png" class="img" alt="">
+        <div class="name">Snickers</div>
+        <div class="price">Rs.200</div>
+        <div class="order">order</div>
+ </div>
+ <div class="food" data-product="cake">
+        <img src="images/cake6.png" class="img" alt="">
+        <div class="name">Red Velvet</div>
+        <div class="price" cost="190">Rs.210</div>
+        <div class="order">order</div>
+ </div>
+ <div class="food" data-product="cake">
+        <img src="images/cake7.png" class="img" alt="">
+        <div class="name">Chocolate</div>
+        <div class="price">Rs.150</div>
+        <div class="order">order</div>
+ </div>
+ <div class="food" data-product="cake">
+        <img src="images/cake8.png" class="img" alt="">
+        <div class="name">Choco Strawberry</div>
+        <div class="price">Rs.50</div>
+        <div class="order">order</div>
+ </div>
+ <div class="food" data-product="cake">
+       <img src="images/cake9.png" class="img" alt="">
+       <div class="name">Oreo Cake</div>
+       <div class="price">Rs.180</div>
+       <div class="order">order</div>
+</div>
+<!-- Veg -->
+ <div class="food" data-product="veg">
+       <img src="images/veg1.png" class="img" alt="">
+       <div class="name">Pulao</div>
+       <div class="price">Rs.100</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg2.png" class="img" alt="">
+       <div class="name">Thali</div>
+       <div class="price">Rs.150</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg3.png" class="img" alt="">
+       <div class="name">Veg Rice</div>
+       <div class="price">Rs.135</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg4.png" class="img" alt="">
+       <div class="name">Noodles</div>
+       <div class="price">Rs.80</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg5.png" class="img" alt="">
+       <div class="name">Pizza</div>
+       <div class="price">Rs.90</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg6.png" class="img" alt="">
+       <div class="name">Burger</div>
+       <div class="price">Rs.100</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg7.png" class="img" alt="">
+       <div class="name">Meals</div>
+       <div class="price">Rs.50</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg8.png" class="img" alt="">
+       <div class="name">Sandwitch</div>
+       <div class="price">Rs.80</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg9.png" class="img" alt="">
+       <div class="name">Potato Roll</div>
+       <div class="price">Rs.90</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg10.png" class="img" alt="">
+       <div class="name">Fried Rice</div>
+       <div class="price">Rs.110</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="veg">
+       <img src="images/veg11.png" class="img" alt="">
+       <div class="name">Veg Biryani</div>
+       <div class="price">Rs.130</div>
+       <div class="order">order</div>
+</div>
+<!-- Nonveg -->
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg1.png" class="img" alt="">
+       <div class="name">Egg Fried Rice</div>
+       <div class="price">Rs.80</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg2.png" class="img" alt="">
+       <div class="name">Chicken Biryani</div>
+       <div class="price">Rs.145</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg3.png" class="img" alt="">
+       <div class="name">Chicken Fried Rice</div>
+       <div class="price">Rs.120</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg4.png" class="img" alt="">
+       <div class="name">Chicken Roll</div>
+       <div class="price">Rs.130</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg5.png" class="img" alt="">
+       <div class="name">Chicken Burger</div>
+       <div class="price">Rs.150</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg6.png" class="img" alt="">
+       <div class="name">Chicken Fry</div>
+       <div class="price">Rs.100</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg7.png" class="img" alt="">
+       <div class="name">Grilled Chicken</div>
+       <div class="price">Rs.130</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg8.png" class="img" alt="">
+       <div class="name">Chicken Pizza</div>
+       <div class="price">Rs.110</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg9.png" class="img" alt="">
+       <div class="name">Chicken Noodles</div>
+       <div class="price">Rs.120</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg"
+>
+       <img src="images/nonveg10.png" class="img" alt="">
+       <div class="name">Mutton Biryani</div>
+       <div class="price">Rs.170</div>
+       <div class="order">order</div>
+</div>
+<div class="food" data-product="nonveg">
+       <img src="images/nonveg11.png" class="img" alt="">
+       <div class="name">Mutton Gravy</div>
+       <div class="price">Rs.100</div>
+       <div class="order">order</div>
+</div>
+</div>
+<div id="reservation" class="reservation">
+       <form id="form">
+              <input type="text" name="name" placeholder="Name" id="name">
+              <input type="email" name="email" placeholder="Email" id="email">
+              <input type="text" name="phone" placeholder="Phone Number">
+              <input type="text" name="seats" placeholder="Number Of Seats">
+              <input type="text" name="date" placeholder="Date">
+              <input type="text" name="time" placeholder="Time">
+              <input type="text" name="address" placeholder="Address">
+              <select name="room_type" id="grp">
+                  <option value="Room Type">Room Type</option>
+                  <option value="AC">AC</option>
+                  <option value="Non-AC">Non-AC</option>
+              </select>
+              <div class="bt">
+                     <button class="btn">Book My Table</button>
+              </div>
+          </form>
+          <div class="resclose">&times;</div>
+</div>
+<div class="contact" id="contact">
+       <dl>
+              <dt>opening:</dt>
+              <dd>9.30 AM - 10.30 PM.</dd>
+              <dd>tuesday and friday leave.</dd>
+       </dl>
+       <form action="">
+              <input type="text" id="name" placeholder="Name">
+              <input type="email"  id="email" placeholder="Email">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+               <input type="submit" name="submit" id="submit">
+       </form>
+       <div class="conclose">&times;</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
